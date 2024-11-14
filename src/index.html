@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="m-auto flex h-screen items-center justify-center bg-gray-100">
+  <section class="flex h-full w-full flex-col md:flex-row">
+    <!-- Primeira coluna -->
+    <div class="flex w-full flex-col items-center justify-center bg-white p-6 md:w-1/2 h-full">
+      <img src="/src/img/user.png" alt="User" class="img-login mb-4" />
+      <h2 class="mb-4 text-center text-2xl font-bold">Login</h2>
+      <!-- Formulário -->
+      <form class="w-full">
+        <div class="mb-4">
+          <input type="email" class="w-full rounded-md border border-gray-300 p-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome" />
+        </div>
+        <div class="mb-4">
+          <input type="password" class="w-full rounded-md border border-gray-300 p-2" id="exampleInputPassword1" placeholder="Password" />
+        </div>
+        <div class="mb-4 flex items-center justify-between">
+          <div class="flex items-center">
+            <input type="checkbox" class="mr-2" id="exampleCheck1" />
+            <label for="exampleCheck1" class="text-sm">Lembrar a senha</label>
+          </div>
+          <div>
+            <a href="#" class="text-blue-600 hover:underline">Esqueceu a senha?</a>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full rounded-md bg-blue-600 py-2 font-bold text-white hover:bg-blue-700">Acessar</button>
+        <p class="mt-4 text-center text-sm">Não possui uma conta?<a href="#" class="text-blue-600 hover:underline">Criar uma conta</a></p>
+      </form>
+    </div>
+
+    <!-- Segunda coluna -->
+    <div class="bg-blue hidden items-center justify-center p-6 text-white md:flex md:w-1/2 flex-col">
+      <h1 class="mb-4 text-center text-3xl font-light">
+        Domine as <span class="font-bold">tecnologias mais buscadas</span> pelo mercado!
+      </h1>
+      <img src="/src/img/techs.png" alt="Techs" class="w-3/4" />
+    </div>
+  </section>
+</body>
+</html>
